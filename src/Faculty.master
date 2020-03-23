@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Faculty.master.cs" Inherits="Faculty" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Feedback System </title>
+    <style type="text/css">
+
+
+        .style1
+        {
+            width: 99%;
+            height: 27px;
+        }
+        .style3
+        {
+            height: 63px;
+             width:1%;
+            text-align: right;
+        }
+        .style19
+        {
+            height: 63px;
+            text-align: right;
+            width: 928px;
+        }
+        .style17
+        {
+            text-align: center;
+            font-family: "Century Gothic";
+            font-weight: bold;
+        }
+        .style18
+        {
+            height: 112px;
+        }
+        .style27
+        {
+            width: 123px;
+        }
+        .style28
+        {
+            width: 103px;
+        }
+        .style29
+        {
+            width: 66px;
+        }
+        .style30
+        {
+            width: 69px;
+        }
+        </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <table class="style1" style="border-color: #c6b217" bgcolor="#c6b217">
+        <tr>
+            <td bgcolor="#c6b217" class="style3" style="border-color: #c6b217">
+                &nbsp;&nbsp;</td>
+            <td bgcolor="#c6b217" class="style19">
+                <div class="style17">
+                    <marquee behavior="alternate" class ="style17">STUDENT FEEDBACK SYSTEM</marquee></div>
+                <table align="center" bgcolor="Silver" class="style1">
+                    <tr>
+                        <td style="border-color: #c6b217; text-align: left" class="style18">
+                            <asp:Image ID="Image2" runat="server" Height="197px" 
+                                ImageUrl="~/Images/sl5.JPG" Width="100%" />
+                        </td>
+                    </tr>
+                      <tr align="center">
+                        <td class="style4" style="border: medium solid #333333;">
+                            <table class="style5">
+                                <tr bgcolor="#c6b217">
+                                    <td class="style30" align="center">
+                                        <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="Black" 
+                                            CausesValidation="False" PostBackUrl="~/faculty/Home.aspx" 
+                                             Font-Bold="True">Home</asp:LinkButton>
+                                    </td>
+                                     <%--<td class="style26" align="center">
+                                      
+                                        &nbsp;<asp:LinkButton ID="LinkButton10" runat="server" ForeColor="Black" 
+                                            CausesValidation="False" PostBackUrl="~/Admin/Branch.aspx" 
+                                            Font-Bold="True">Branch</asp:LinkButton>
+                                    </td>--%>
+                                    <td class="style27" align="center">
+                                            &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" ForeColor="Black" 
+                                            CausesValidation="False" PostBackUrl="~/faculty/viewstudent.aspx" 
+                                            Font-Bold="True">View Student</asp:LinkButton>
+                                    </td>
+                                       <td class="style28" align="center">
+                                       
+                                        &nbsp;<asp:LinkButton ID="LinkButton8" runat="server" ForeColor="Black" 
+                                            CausesValidation="False" PostBackUrl="~/faculty/addstudent.aspx" 
+                                            Font-Bold="True" >Add Student</asp:LinkButton>
+                                    </td>
+                                     <td class="style11">
+                                        <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="Black" 
+                                            CausesValidation="False" PostBackUrl="~/faculty/changepassword.aspx">Change 
+                                        Password</asp:LinkButton>
+                                    </td>
+                                     
+                                    <td align="center" class="style29">
+                                        &nbsp;<asp:LinkButton 
+                                            ID="LinkButton12" runat="server" ForeColor="Black" 
+                                            CausesValidation="False"
+                                            Font-Bold="True" onclick="LinkButton12_Click1"  >Logout</asp:LinkButton>
+                                       </td>
+                                    </tr>
+                                    </tr>
+                                    </tr>
+                            </table>
+                    <tr>
+                        <td>
+                             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp;</td>
+            <td bgcolor="#c6b217" class="style3">
+                &nbsp;&nbsp;
+            </td>
+        </tr>
+    </table>
+    </td>
+    </table>
+   
+    </form>
+</body>
+</html>
+  

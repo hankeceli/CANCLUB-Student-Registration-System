@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RegistrationMasterPage.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .style1
+        {
+            height: 500px;
+            width: 798px;
+        }
+        .style17
+        {
+            text-align: center;
+            font-family: "Century Gothic";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+      <table style="font-family:Arial">
+    <tr>
+        <td colspan="2" style="height:80px; background-color:#c6b217; 
+            text-align:center">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/oim.jpg" 
+                Width="957px" />
+        </td>
+    </tr>
+    <tr>
+      <%--  for right side column <td style="height:500px; background-color:#66FFFF; width:150px">
+            &nbsp;</td>--%>
+        <td style="background-color:#c6b217; " class="style1">
+             <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color:#c6b217; text-align:center">
+        </td>
+    </tr>
+</table>
+
+
+    </form>
+</body>
+</html>

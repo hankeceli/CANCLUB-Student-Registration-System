@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style3
+        {
+            width: 800px;
+            height: 325px;
+        }
+        .style17
+        {
+            text-align: center;
+            font-family: "Century Gothic";
+            font-weight: bold;
+        }
+        .style4
+        {
+            height: 500px;
+            width: 306px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+      <table style="font-family:Arial" bgcolor="#c6b217">
+    <tr>
+        <td colspan="2" style="background-color:#c6b217; 
+            text-align:center" class="style3">
+            <h1 style="height: 327px">
+                <asp:Image ID="Image1" runat="server" Height="340px" 
+                    ImageUrl="~/images/cankaya-university.jpg" style="font-size: x-small" 
+                    Width="959px" />
+&nbsp;</h1>
+  
+        </td>
+    </tr>
+    <tr>
+        <%--<td style="height:500px; background-color:#66FFFF; width:150px">--%>
+        <td style="background-color:ThreeDFace; " class="style4">
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/images/ceng_emblem_tr.png"            
+          columnWidth="300px" style="margin-right: 90px" />
+        </td>
+        <td style="height:500px; background-color:#c6b217; width:650px; z-index: auto;">
+      
+                 <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> 
+
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </td>
+    </tr>
+   
+</table>
+
+
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
